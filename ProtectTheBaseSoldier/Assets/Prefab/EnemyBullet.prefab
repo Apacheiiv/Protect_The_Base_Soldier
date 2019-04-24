@@ -39,11 +39,9 @@ GameObject:
   - component: {fileID: 50677022200413344}
   - component: {fileID: 114249153688648594}
   - component: {fileID: 114447840788177420}
-  - component: {fileID: 114056132201620768}
-  - component: {fileID: 114393485827528000}
   m_Layer: 0
   m_Name: EnemyBullet
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,17 +118,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &114056132201620768
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1952505372884030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dac248e99cf44ba5b147b6df9036296, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114249153688648594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,49 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
---- !u!114 &114393485827528000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1952505372884030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e255820a8a54cb28986e93e3568cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkName: 0
-  targetName: 
-  checkTag: 1
-  targetTag: Base
-  checkLayer: 0
-  targetLayer: 
-  onTriggerEnterActions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114056132201620768}
-        m_MethodName: ActionDestroyObject
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1952505372884030}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: OnTrigger2DActivator+TriggerAction, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onTriggerStayActions:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: OnTrigger2DActivator+TriggerAction, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onTriggerExitActions:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: OnTrigger2DActivator+TriggerAction, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114447840788177420
 MonoBehaviour:
   m_ObjectHideFlags: 1
