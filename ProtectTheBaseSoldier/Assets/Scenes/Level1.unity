@@ -747,7 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d64158a24f584568b869a4720b9b939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingValue: 120
+  startingValue: 60
   hasMinValue: 1
   minValue: 0
   hasMaxValue: 0
@@ -891,7 +891,7 @@ EdgeCollider2D:
   m_Points:
   - {x: -5.011633, y: -3.2146187}
   - {x: -5.028991, y: -3.2041435}
-  - {x: -5.0280795, y: -3.7496214}
+  - {x: -5.029468, y: -3.8362596}
 --- !u!68 &894606938
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1570,7 +1570,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!114 &1905604401
 MonoBehaviour:
   m_ObjectHideFlags: 0
